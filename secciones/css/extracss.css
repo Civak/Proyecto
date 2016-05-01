@@ -1,0 +1,72 @@
+/* lineas del scrollToTop que sirve para regresar arriba */
+.scrollToTop{
+    z-index: 9999;
+	width:100px; 
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #00a0dc;
+	text-decoration: none;
+	position:fixed;
+	top:80%;
+	right:40px;
+	display:none;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 16px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 16px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 16px 0px rgba(50, 50, 50, 0.75);
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
+
+.fondoMenu{
+    background-color:#fff !important;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.5);
+    padding-top:1em !important;
+    border-bottom:2px solid #00a0dc !important;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.fondoBlanco{
+    padding:1em;
+    background-color:#fff;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+}
+.li-bg
+{
+cursor: pointer;
+border: 1px solid #CCC;
+}
+.li-bg:hover
+{
+	background:#00a0dc;
+}
+.li-bg:hover a
+{
+	color: black;
+}
+
+.thumbsShadow{
+-webkit-box-shadow: 0px 1px 9px 1px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 1px 9px 1px rgba(0,0,0,0.6);
+box-shadow: 0px 1px 9px 1px rgba(0,0,0,0.6);
+}
+
+.thumbsShadowP{
+-webkit-box-shadow: 0px 1px 9px 1px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 1px 9px 1px rgba(0,0,0,0.4);
+box-shadow: 0px 1px 9px 1px rgba(0,0,0,0.4);
+}
