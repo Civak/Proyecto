@@ -1,6 +1,6 @@
 <title>Casa Varcheli</title>
 <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="shortcut icon" type="image/x-icon" href="../../images/icono.ico">
+<link rel="shortcut icon" type="image/x-icon" href="../../images/iconoRing.ico">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../../js/jquery.min.js"></script>
 <script type="text/javascript" src="../plugins/jquery.cookie.js"></script>

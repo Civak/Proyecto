@@ -1,5 +1,5 @@
 <title>Casa Varcheli</title>
-<link rel="shortcut icon" type="image/x-icon" href="../../images/icono.ico">
+<link rel="shortcut icon" type="image/x-icon" href="../../images/iconoRing.ico">
 <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="../plugins/jquery-ui.css" rel="stylesheet" type="text/css" media="all" />
 
