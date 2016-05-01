@@ -100,6 +100,35 @@ $(document).ready(function(){
         $("div.login_sec").find("div#areaDeEdicion").fadeIn(2000);
     });
     
+	/******** click en boton buscar y esta funcion solo coloca las 2 cookies necesarias *****/
+    $("div#menuPri").on("click", "a#buscar-btn", function(e){
+		e.preventDefault();
+		console.log("si");
+			alertify.set({ labels: {
+				ok     : "Buscar",
+				cancel : "Cancelar"
+			} });
+			
+			alertify.prompt("Buscar por palabra clave (máximo 4 palabras)", function (e, str) {
+				if (e) {
+					validarBsc(str);
+				} else {
+					alertify.log("Has cancelado búsqueda");
+				}
+			}, "");
+    });
+	//Funcion que busca por palabra
+	function validarBsc(str){
+			var palabra = str;	
+			palabra = $.trim(palabra);
+			if(palabra != ''){
+				$.cookie("busqueda", palabra, {path: "/"});
+				$.cookie("sec", "BUS", {path: "/"});
+				window.open('../../secciones/apartados/resultados.php', '_blank');
+			}else{
+					alertify.error("Escribe al menos una palabra o código de barras.");
+				}
+	};
     /******** click en boton contraseña de seccion perfil *****/
     $("div#menuPri").on("click", "li#per-con", function(){
         $("div.login_sec").find("div#areaDeEdicion").hide();

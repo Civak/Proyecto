@@ -239,10 +239,16 @@ class Catalogos
 		$this->conn->close();
 		}
 		
+		//Funcion que busca articulos
 		public function buscarArt()
 		{
 			$this->conectar(0);
 			$sql = "";
+			$deDonde = false;
+			if(strcmp($_COOKIE['sec'], "BUS") === 0 && !isset($_POST['cont'])){
+				$deDonde = true;
+				$_POST['cont'] = 0;
+			}
 			//$palabras = str_replace("  "," ",$_COOKIE['busqueda'])." ";
 			
 			if(is_numeric($_COOKIE['busqueda'])){
@@ -319,7 +325,14 @@ class Catalogos
 			}
 			else 
 			{
-				echo -1;
+				//Si viene la cookie desde la área de admin, primero se evalua. Ver primeras líneas de la función.
+				if($deDonde)
+				{
+					echo "<div class='noResultados'><p><b>Ups... no se han encontrado coicidencias de la búsqueda.</b></p></div>";
+				}
+				else { //En caso se venir de cualquier otra sección.
+					echo -1;
+				}
 			}
 			
 			$this->conn->close();

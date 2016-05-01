@@ -296,3 +296,13 @@ background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(188,179,17
 background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(188,179,171,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#e6bcb3ab',GradientType=0 ); /* IE6-9 */	
 }
+.noResultados{
+	font-family: texto;
+	font-size: 18px;
+border: 1px solid #CCC; height: 200px; background: #fff; text-align: center; padding: 10%; margin-bottom: 6%;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,bfac9b+100&1+0,0.65+100 */
+background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(191,172,155,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(191,172,155,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(191,172,155,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#a6bfac9b',GradientType=0 ); /* IE6-9 */
+}
