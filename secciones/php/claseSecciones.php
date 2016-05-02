@@ -207,7 +207,8 @@ class Catalogos
 				{
 					$articulos .= $deta[$ini] . '<br>';
 				}
-
+				
+				$articulos .= '<br><p class="infoPics">Click sobre la imagen para ver detalles</p>';
 				$articulos .= '</div>
 				        <script type="text/javascript">
 						  $(document).ready(function(){

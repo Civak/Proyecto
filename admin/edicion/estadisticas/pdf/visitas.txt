@@ -1,6 +1,6 @@
-Bautizos;23
-Bodas;913
-Caballero;53
-Primera Comunión;87
-Presentaciones;70
-XV Años;211
+Bautizos;9
+Bodas;42
+Caballero;12
+Primera Comunión;5
+Presentaciones;13
+XV Años;3
