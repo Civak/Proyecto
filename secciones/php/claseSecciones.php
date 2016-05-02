@@ -36,7 +36,7 @@ class Catalogos
 					<a id="'.$row['codbar'].'"><div class="product-grid love-grid" ><div style="height: 220px;">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="../imagenes/thumbs/'.$row['codbar'].'_1.jpg" class="img-responsive" width="166" height="194" alt=""/>
+							<img src="../imagenes/thumbs/'.$row['codbar'].'_1.jpg" class="thumbnail img-adj" style="min-height:190px; height:190px;" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button class="btns"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Ver detalles</button>
@@ -44,7 +44,7 @@ class Catalogos
 							</div>
 						</div></div></a>					
 						<div class="product-info simpleCart_shelfItem">
-						<hr style="border-color: #CCC;">
+						<hr style="border-color: #BFAC9B;">
 							<div class="product-info-cust">
 							
 								<p>Código: <b style="color: #662735;">'.$row['codbar'].'</b></p>
@@ -84,7 +84,7 @@ class Catalogos
 					<a id="'.$row['codbar'].'"><div class="product-grid love-grid" ><div style="height: 220px;">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="../imagenes/thumbs/'.$row['codbar'].'_1.jpg" class="img-responsive" width="166" height="194" alt=""/>
+							<img src="../imagenes/thumbs/'.$row['codbar'].'_1.jpg" class="thumbnail img-adj" style="min-height:190px; height:190px;" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button class="btns"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Ver detalles</button>
@@ -92,7 +92,7 @@ class Catalogos
 							</div>
 						</div></div></a>					
 						<div class="product-info simpleCart_shelfItem">
-						<hr style="border-color: #CCC;">
+						<hr style="border-color: #BFAC9B;">
 							<div class="product-info-cust">
 							
 								<p>Código: <b style="color: #662735;">'.$row['codbar'].'</b></p>
@@ -136,7 +136,7 @@ class Catalogos
 					<a id="'.$row['codbar'].'"><div class="product-grid love-grid" ><div style="height: 220px;">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="../imagenes/thumbs/'.$row['codbar'].'_1.jpg" class="img-responsive" width="166" height="194" alt=""/>
+							<img src="../imagenes/thumbs/'.$row['codbar'].'_1.jpg" class="thumbnail img-adj" style="min-height:190px; height:190px;" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button class="btns"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Ver detalles</button>
@@ -144,7 +144,7 @@ class Catalogos
 							</div>
 						</div></div></a>					
 						<div class="product-info simpleCart_shelfItem">
-						<hr style="border-color: #CCC;">
+						<hr style="border-color: #BFAC9B;">
 							<div class="product-info-cust">
 							
 								<p>Código: <b style="color: #662735;">'.$row['codbar'].'</b></p>
@@ -287,7 +287,7 @@ class Catalogos
 					<a id="'.$row['codbar'].'"><div class="product-grid love-grid" ><div style="height: 220px;">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="../imagenes/thumbs/'.$row['codbar'].'_1.jpg" class="img-responsive" width="166" height="194" alt=""/>
+							<img src="../imagenes/thumbs/'.$row['codbar'].'_1.jpg" class="thumbnail img-adj" style="min-height:190px; height:190px;" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button class="btns"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Ver detalles</button>
@@ -295,7 +295,7 @@ class Catalogos
 							</div>
 						</div></div></a>					
 						<div class="product-info simpleCart_shelfItem">
-						<hr style="border-color: #CCC;">
+						<hr style="border-color: #BFAC9B;">
 							<div class="product-info-cust">
 							
 								<p>Código: <b style="color: #662735;">'.$row['codbar'].'</b></p>
