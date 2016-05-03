@@ -136,13 +136,46 @@ $(document).ready(function(){
 				window.open('../../secciones/apartados/resultados.php', '_blank');
 				}else 
 				{
-					
+					//validarNota("ventas/php/initVen.php", 0, "div.login_sec form");
 				}
 			}else{
 					if(queEs === true) alertify.error("Escribe el No. de Nota.");
 					else alertify.error("Escribe al menos una palabra o código de barras.");
 				}
 	};
+	//----------- click en botón confirmar cambio de contraseña. verifica campos
+    $("div.login_sec").on("click", "button#confirmar-ven", function(event){
+			validarNota("ventas/php/initVen.php", 0, "div.login_sec form");
+		});
+	//------------------- Valida Form de Nota de Venta (Registrar nota)
+	    function validarNota(archivo, acc, area)
+    	{
+        var inputsname = [];
+        var inputs = [];
+        var vacios = false;
+      $(area).find('input, textarea, select').each(function(){
+            inputs.push($(this).val());
+            inputsname.push($(this).attr('name'));
+        });
+        
+        for(var i = 0; i < inputs.length; i++)
+        {
+            if(inputs[i] == '')
+            {
+                vacios = true;
+				break;
+            }
+        }
+        
+        if(vacios === true)
+        {
+           alertify.error("Algún campo está vacio, por favor verifica nuevamente.");
+        }
+        else 
+        {
+            enviarForms(archivo, acc, area);
+        }
+    }
     /******** click en boton contraseña de seccion perfil *****/
     $("div#menuPri").on("click", "li#per-con", function(){
         $("div.login_sec").find("div#areaDeEdicion").hide();
@@ -497,7 +530,20 @@ $(document).ready(function(){
           contentType: false,
           processData: false,
           success: function (infoRegreso) {
-                 alertify.log(infoRegreso);
+			  if($.isNumeric(infoRegreso)){
+				  switch(parseInt(infoRegreso)){
+					  case 1:
+					  	  $("div.login_sec").find("div#areaDeEdicion").hide();
+						  $("div.login_sec").find("div#areaDeEdicion").load("ventas/ventas.php");
+						  $("div.login_sec").find("div#areaDeEdicion").fadeIn(2000);
+						  alertify.success("Registro de Nota de Venta correcto...");
+					  break;
+					  case -1:
+					  	alertify.error("Ese número de nota ya existe, verifica por favor.");
+					  break;
+				  }
+			  }
+               else alertify.log(infoRegreso);
           },
           error: function (infoRegreso) {
               alertify.error(infoRegreso);

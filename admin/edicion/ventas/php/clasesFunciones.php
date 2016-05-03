@@ -22,9 +22,14 @@
         //-----Función para registrar venta.
        function registrarVenta()
         {
-        
+        	
+			$Codigo = $_POST['num-not'];
+			$Fecha  = $_POST['fec-not'];
+			$Cliente = $_POST['cli-not'];
+			$Total = $_POST['tot-not'];
+		
         $this->conectar(0);
-        $sql = "INSERT INTO Ventas VALUES (".$Codigo.", CURRENT_TIMESTAMP, '".$Cliente."', ".$Total.");";
+        $sql = "INSERT INTO Ventas VALUES (".$Codigo.", '".$Fecha."', '".$Cliente."', ".$Total.");";
                         if ($this->conn->query($sql) === TRUE) {
                         echo 1;
                         } else {
