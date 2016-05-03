@@ -326,3 +326,18 @@ box-shadow:         1px 1px 11px 0px rgba(50, 50, 50, 0.5) inset;
 -moz-box-shadow:    1px 1px 11px 0px rgba(50, 50, 50, 0.6) inset;
 box-shadow:         1px 1px 11px 0px rgba(50, 50, 50, 0.6) inset;
 }
+
+/* mapedo de imagenes del index, estilos css */
+.img-dos-Prin{
+	cursor: pointer;
+	height:80px; border: 1px solid #ccc; background:#FFF;
+	padding: 1%;
+	text-align: center;
+	font-family: texto;
+	-webkit-box-shadow: 1px 1px 6px 0px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    1px 1px 6px 0px rgba(50, 50, 50, 0.3);
+	box-shadow:         1px 1px 6px 0px rgba(50, 50, 50, 0.3);
+}
+.img-dos-Prin:hover{
+	border: 1px solid #662735;
+}

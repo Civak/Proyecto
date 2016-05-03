@@ -176,6 +176,13 @@ $(document).ready(function(){
             enviarForms(archivo, acc, area);
         }
     }
+	/******** click en boton inicio *****/
+    $("div#menuPri").on("click", "li#inicio-fot", function(){
+        $("div.login_sec").find("div#areaDeEdicion").hide();
+        $("div.login_sec").find("div#areaDeEdicion").load("inicio/index.php");
+        $("div.login_sec").find("div#areaDeEdicion").fadeIn(1200);
+    });
+	
     /******** click en boton contraseña de seccion perfil *****/
     $("div#menuPri").on("click", "li#per-con", function(){
         $("div.login_sec").find("div#areaDeEdicion").hide();

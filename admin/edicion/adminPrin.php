@@ -74,7 +74,7 @@
             <li><a href="#">Género</a></li>
             <li><a href="#">Tipo</a></li>
             <li><a href="#">Carrusel</a></li>
-            <li><a href="#">Inicio</a></li>
+            <li id="inicio-fot"><a href="#">Inicio</a></li>
           </ul>
         </li>
       </ul><!-- termina ul principal izquierdo -->
