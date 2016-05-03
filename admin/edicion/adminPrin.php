@@ -28,9 +28,17 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Ventas</a></li>
-        <li><a href="#">Inventario</a></li>
         <!-- Ventas -->
+        <li class="dropdown"> 
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ventas<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li id="ven-nue"><a href="#"><span class="glyphicon glyphicon-ok"></span> Registrar Venta</a></li>
+            <li id="buscar-btn"><a href="#"><span class="glyphicon glyphicon-search"></span> Buscar/Eliminar Venta</a></li>
+          </ul>
+        </li>
+        <!-- Inventario -->
+        <li><a href="#">Inventario</a></li>
+        <!-- Artículos -->
         <li class="dropdown"> 
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artículos<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -65,6 +73,8 @@
             <li><a href="#">Talla</a></li>
             <li><a href="#">Género</a></li>
             <li><a href="#">Tipo</a></li>
+            <li><a href="#">Carrusel</a></li>
+            <li><a href="#">Inicio</a></li>
           </ul>
         </li>
       </ul><!-- termina ul principal izquierdo -->

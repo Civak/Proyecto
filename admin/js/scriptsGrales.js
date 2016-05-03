@@ -26,6 +26,13 @@ $(document).ready(function(){
     /********************************************************************************
     ## COMIENZAN LAS FUNCIONES PARA DETECTAR LOS BOTONES DE LOS DISTINTOS MENUS O SECCIONES
     *********************************************************************************/
+	//Estas funciones solamente son para la sección ventas. 
+    /******** click en boton nueva venta *****/
+    $("div#menuPri").on("click", "li#ven-nue", function(){
+        $("div.login_sec").find("div#areaDeEdicion").hide();
+        $("div.login_sec").find("div#areaDeEdicion").load("ventas/ventas.php");
+        $("div.login_sec").find("div#areaDeEdicion").fadeIn(2000);
+    });
     //Estas funciones solamente son para la sección articulos. 
     /******** click en boton nuevo *****/
     $("div#menuPri").on("click", "li#art-nue", function(){
@@ -101,32 +108,39 @@ $(document).ready(function(){
     });
     
 	/******** click en boton buscar y esta funcion solo coloca las 2 cookies necesarias *****/
-    $("div#menuPri").on("click", "a#buscar-btn", function(e){
+    $("div#menuPri").on("click", "a#buscar-btn, li#buscar-btn", function(e){
 		e.preventDefault();
-		console.log("si");
+		var msj = "Buscar por palabra clave (máximo 4 palabras)";
+		var queEs = $(this).prev().is("li");
+		
 			alertify.set({ labels: {
 				ok     : "Buscar",
 				cancel : "Cancelar"
 			} });
-			
-			alertify.prompt("Buscar por palabra clave (máximo 4 palabras)", function (e, str) {
+			if(queEs === true) msj = "Buscar No. de Nota.";
+			alertify.prompt(msj, function (e, str) {
 				if (e) {
-					validarBsc(str);
+					validarBsc(str, queEs);
 				} else {
 					alertify.log("Has cancelado búsqueda");
 				}
 			}, "");
     });
 	//Funcion que busca por palabra
-	function validarBsc(str){
-			var palabra = str;	
-			palabra = $.trim(palabra);
-			if(palabra != ''){
-				$.cookie("busqueda", palabra, {path: "/"});
+	function validarBsc(str, queEs){	
+			str = $.trim(str);
+			if(str != ''){
+				if(queEs === false){
+				$.cookie("busqueda", str, {path: "/"});
 				$.cookie("sec", "BUS", {path: "/"});
 				window.open('../../secciones/apartados/resultados.php', '_blank');
+				}else 
+				{
+					
+				}
 			}else{
-					alertify.error("Escribe al menos una palabra o código de barras.");
+					if(queEs === true) alertify.error("Escribe el No. de Nota.");
+					else alertify.error("Escribe al menos una palabra o código de barras.");
 				}
 	};
     /******** click en boton contraseña de seccion perfil *****/
