@@ -136,7 +136,7 @@ $(document).ready(function(){
 				window.open('../../secciones/apartados/resultados.php', '_blank');
 				}else 
 				{
-					//validarNota("ventas/php/initVen.php", 0, "div.login_sec form");
+					enviarDatosBuscar("ventas/php/initVen.php", str, 1);
 				}
 			}else{
 					if(queEs === true) alertify.error("Escribe el No. de Nota.");
@@ -321,7 +321,6 @@ $(document).ready(function(){
 		var date = new Date(); //Obtengo tiempo de expiración, 10 min. 
         date.setTime(date.getTime() + (10 * 60 * 1000));
         
-        //var formData = new FormData($("div.login_sec form")[0]);
         $.cookie("accion",1, {expires: date, path: "/"});
             $.ajax({
                 data: {"cod":0}, 
@@ -371,7 +370,6 @@ $(document).ready(function(){
         }
         else
         {
-                    //Se envian los datos serializados. 
                     var date = new Date(); //Obtengo tiempo de expiración, 10 min. 
                     date.setTime(date.getTime() + (10 * 60 * 1000));
                     var fechas = $(area).find("input#"+inputsname[0]).val()+";"+$(area).find("input#"+inputsname[1]).val();
@@ -410,12 +408,9 @@ $(document).ready(function(){
         }
         else
         {
-                    //Se envian los datos serializados.
                     $("div.login_sec").find("form#c-seguridad input#nva-pregunta").prop('disabled', false);
                     enviarForms('perfil/php/initPer.php', 2, area);
                     $(area).find("input#"+inputsname[0]).val('');
-                    //$(area).find("input#"+inputsname[1]).val('');
-                    //$(area).find("input#"+inputsname[2]).val('');
                     $(area).find("input#"+inputsname[3]).val('');
                     $("div.login_sec").find("form#c-seguridad input#nva-pregunta").prop('disabled', true);
         }
@@ -752,8 +747,11 @@ $(document).ready(function(){
                         case -1:
                             alertify.error("No existe ningún producto con ese Código de Barras, intenta nuevamente.");
                             break;
+						case -2:
+                            alertify.error("No existe ninguna nota de venta con ese número, intenta nuevamente.");
+                            break;
                         case 1:
-                            alertify.success("Artículo eliminado correctamente.");
+                            alertify.success("Eliminación correcta.");
                             break;
                             
                         default:
@@ -765,7 +763,7 @@ $(document).ready(function(){
                                 if (e) {
                                     enviarDatosBuscar(archivo, dato, 2);
                                 } else {
-                                    alertify.error("Se ha cancelado eliminar artículo.");
+                                    alertify.error("Se ha cancelado acción.");
                                 }
                             });
                     }

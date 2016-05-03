@@ -9,6 +9,7 @@
 <script src="../../js/bootstrap.min.js"></script>
 <script src="../plugins/alertify.min.js"></script>
 <script src="../plugins/jquery-ui.js"></script>
+<script src="../plugins/picut/src/jquery.picture.cut.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
 <link href="../../css/style.css" rel="stylesheet" type="text/css" media="all" />

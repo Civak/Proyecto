@@ -17,7 +17,7 @@ js/scriptsGrales.js
                 $venta->buscarVenta();
                 break;
             case 2:
-                $venta->buscarVenta();
+                $venta->registrarVenta();
                 break;
         }
     }

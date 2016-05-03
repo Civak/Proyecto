@@ -117,11 +117,13 @@
 				    <div class="col-sm-1"></div>
                   <div id="areaDeEdicion" class="col-sm-10 edit-box1 login-gradient">
                       <img src="images/adm.png" class="img-responsive imgShadow"  />
+
                   </div>
                   <div class="col-sm-1"></div>
                 </div>
     </div>
 </div>
+
 <!-- ERROR Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
