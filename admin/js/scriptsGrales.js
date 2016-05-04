@@ -187,10 +187,10 @@ $(document).ready(function(){
 		var cual = $(this).attr("id");
 			switch(cual){
 				case "img1":
-				cargarCrop(cual);
+				cargarCrop("img1", cual);
 				break;
 				case "img2":
-				//cargarCrop(cual);
+				cargarCrop("img1", cual);
 				break;
 				case "img3":
 				//cargarCrop(cual);
@@ -205,7 +205,8 @@ $(document).ready(function(){
 	});
 	
 	//---------- Carga croping 
-	function cargarCrop(cual){
+	function cargarCrop(cual, nombre){
+		$.cookie("img", nombre, {path: "/"});
 		$("div.login_sec").find("div#crop-img-box").hide();
         $("div.login_sec").find("div#crop-img-box").load("inicio/"+cual+".php");
         $("div.login_sec").find("div#crop-img-box").fadeIn(1200);

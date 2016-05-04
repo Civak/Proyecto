@@ -9,7 +9,7 @@ var croppicContaineroutputOptions = {
 				modal:false,
 				loaderHtml:'<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
 				onBeforeImgUpload: function(){ 
-					$.cookie("img","img1", {path: "/"});
+					//$.cookie("img","img1", {path: "/"});
 				},
 				onAfterImgUpload: function(){ console.log('onAfterImgUpload---') },
 				onImgDrag: function(){ console.log('onImgDrag----') },

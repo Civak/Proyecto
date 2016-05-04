@@ -57,7 +57,7 @@ se repiten en la página de contacto.php ----------------->
     	<div class="col-xs-6">
 		<a href="secciones/apartados/index.php" id="XVA">
         <div class="img-shadow">
-          <img id="demo2" src="images/b.jpg" class="img-responsive" />
+          <img id="demo2" src="images/inicio/img2.jpg" class="img-responsive img-shadow" />
           <div class="contenthover">
           Todo sobre XV años
           </div>
