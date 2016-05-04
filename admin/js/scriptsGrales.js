@@ -239,7 +239,10 @@ $(document).ready(function(){
 		else $("div.login_sec").find("div#crop-img-box").load("carrusel/"+cual+".php");
         $("div.login_sec").find("div#crop-img-box").fadeIn(1200);
 	}
-	
+	//----------- click en botón generar inventario en PDF
+    $("div#menuPri").on("click", "li#pdf-inv", function(event){
+		window.open('estadisticas/pdf/invpdf.php', '_blank');
+	});
 	//----------- click en botón ver inventario
     $("div#menuPri").on("click", "li#lis-inv", function(event){
 		var date = new Date(); //Obtengo tiempo de expiración, 10 min. 

@@ -41,8 +41,9 @@
         <ul class="dropdown-menu">
             <li id="lis-inv"><a href="#" title="Listar inventario"><span class="glyphicon glyphicon-list"></span> Listar inventario</a></li>
             <li id="imp-cod"><a href="#" title="Imprimir código de barras"><span class="glyphicon glyphicon-barcode"></span> Código de Barras</a></li>
+            <li id="pdf-inv"><a href="#" title="Generar PDF de inventario"><span class="glyphicon glyphicon-list-alt"></span> Inventario en PDF</a></li>
+            </ul>
         </li>
-        </ul>
         <!-- Artículos -->
         <li class="dropdown"> 
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artículos<span class="caret"></span></a>
