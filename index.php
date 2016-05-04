@@ -78,13 +78,13 @@ se repiten en la página de contacto.php ----------------->
 	</div>
 </div>
 	<div class="col-xs-6 col-md-4">
-    		<img id="demo2" src="images/a1.png" class="img-responsive img-shadow" />
+    		<img id="demo2" src="images/inicio/img3.jpg" class="img-responsive img-shadow" />
     </div>
     <div class="col-xs-6 col-md-4">
-    		<img id="demo2" src="images/a2.png" class="img-responsive img-shadow" />
+    		<img id="demo2" src="images/inicio/img4.jpg" class="img-responsive img-shadow" />
     </div>
     <div class="col-xs-6 col-md-4">
-    		<img id="demo2" src="images/a3.png" class="img-responsive img-shadow" />
+    		<img id="demo2" src="images/inicio/img5.jpg" class="img-responsive img-shadow" />
     </div>
 </div>
 

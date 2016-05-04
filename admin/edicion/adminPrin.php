@@ -32,8 +32,8 @@
         <li class="dropdown"> 
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ventas<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li id="ven-nue"><a href="#"><span class="glyphicon glyphicon-ok"></span> Registrar Venta</a></li>
-            <li id="buscar-btn"><a href="#"><span class="glyphicon glyphicon-search"></span> Buscar/Eliminar Venta</a></li>
+            <li id="ven-nue"><a href="#" title="Registrar nota de venta"><span class="glyphicon glyphicon-ok"></span> Registrar Venta</a></li>
+            <li id="buscar-btn"><a href="#" title="Buscar o eliminar nota de venta"><span class="glyphicon glyphicon-search"></span> Buscar/Eliminar Venta</a></li>
           </ul>
         </li>
         <!-- Inventario -->
@@ -42,26 +42,26 @@
         <li class="dropdown"> 
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artículos<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li id="art-nue"><a href="#"><span class="glyphicon glyphicon-ok"></span> Nuevo</a></li>
-            <li id="art-edi"><a href="#"><span class="glyphicon glyphicon-edit"></span> Editar</a></li>
-            <li id="art-eli"><a href="#"><span class="glyphicon glyphicon-remove"></span> Eliminar</a></li>
+            <li id="art-nue"><a href="#" title="Registrar nuevo artículo"><span class="glyphicon glyphicon-ok"></span> Nuevo</a></li>
+            <li id="art-edi"><a href="#" title="Editar artículo"><span class="glyphicon glyphicon-edit"></span> Editar</a></li>
+            <li id="art-eli"><a href="#" title="Eliminar artículos"><span class="glyphicon glyphicon-remove"></span> Eliminar</a></li>
             <li role="separator" class="divider"></li>
-            <li id="art-bus"><a href="#"><span class="glyphicon glyphicon-search"></span> Buscar</a></li>
+            <li id="art-bus"><a href="#" title="Buscar artículos"><span class="glyphicon glyphicon-search"></span> Buscar</a></li>
           </ul>
         </li>
         <!-- Estadisticas -->
         <li class="dropdown"> 
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estadísticas<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li id="est-vis"><a href="#"><span class="glyphicon glyphicon-stats"></span> Visitas</a></li>
-            <li id="est-art"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Artículos</a></li>
+            <li id="est-vis"><a href="#" title="Ver visitas por sección"><span class="glyphicon glyphicon-stats"></span> Visitas</a></li>
+            <li id="est-art"><a href="#" title="Ver artículos más vistos"><span class="glyphicon glyphicon-shopping-cart"></span> Artículos</a></li>
           </ul>
         </li>
         <!-- Tiendas -->
         <li class="dropdown"> 
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tiendas<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li id="tie-act"><a href="#"><span class="glyphicon glyphicon-refresh"></span> Actualizar</a></li>
+            <li id="tie-act"><a href="#" title="Actualizar información de la tienda"><span class="glyphicon glyphicon-refresh"></span> Actualizar</a></li>
           </ul>
         </li>
         <!-- Edición -->
@@ -73,25 +73,25 @@
             <li><a href="#">Talla</a></li>
             <li><a href="#">Género</a></li>
             <li><a href="#">Tipo</a></li>
-            <li><a href="#">Carrusel</a></li>
-            <li id="inicio-fot"><a href="#" title="Cambiar imágenes del inicio"><span class="glyphicon glyphicon glyphicon-camera"></span> Inicio</a></li>
+            <li><a href="#" title="Cambiar fotos del carrusel"><span class="glyphicon glyphicon-play"></span> Fotos de Carrusel</a></li>
+            <li id="inicio-fot"><a href="#" title="Cambiar imágenes del inicio"><span class="glyphicon glyphicon-camera"></span> Fotos de Inicio</a></li>
           </ul>
         </li>
       </ul><!-- termina ul principal izquierdo -->
       
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" id="buscar-btn"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> Buscar</a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=100011635297468&fref=ts" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
+        <li><a href="#" title="Buscar artículo" id="buscar-btn"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> Buscar</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100011635297468&fref=ts" title="Visitar Facebook" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
          <!-- Perfil -->
         <li class="dropdown"> 
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Perfil<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li id="per-con"><a href="#"><span class="glyphicon glyphicon-lock"></span> Contraseña</a></li>
-            <li id="per-nic"><a href="#"><span class="glyphicon glyphicon-user"></span> Nickname</a></li>
-            <li id="per-seg"><a href="#"><span class="glyphicon glyphicon-sunglasses"></span> Seguridad</a></li>
+            <li id="per-con"><a href="#" title="Cambiar contraseña"><span class="glyphicon glyphicon-lock"></span> Contraseña</a></li>
+            <li id="per-nic"><a href="#" title="Cambiar nickname o apodo"><span class="glyphicon glyphicon-user"></span> Nickname</a></li>
+            <li id="per-seg"><a href="#" title="Ver seguridad de cuenta"><span class="glyphicon glyphicon-sunglasses"></span> Seguridad</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="cerrarSesion.php" style="color: #000 !important;"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesión</a></li>
+            <li><a href="cerrarSesion.php" title="Cerrar sesión" style="color: #000 !important;"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesión</a></li>
           </ul>
         </li>
       </ul>

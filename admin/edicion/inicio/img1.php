@@ -1,5 +1,5 @@
 <div id="caja-crop">
-<h4>Selecciona y edita la foto para mostrar.</h4><hr>
+<h4>Selecciona y edita la foto para mostrar.</h4><span style="font-size:12px;">(Click sobre el icono superior derecho para seleccionar imagen)</span><hr>
 <div id="cropContaineroutput-img1"></div>
 </div>
 
@@ -19,8 +19,8 @@ var croppicContaineroutputOptions = {
 				onBeforeImgCrop: function(){ }, //Al darle click en cortar
 				onAfterImgCrop:function(){ 
 					
-					alertify.success('Imagen 1 se cambio correctamente...');
-					$("div.login_sec").find("div#crop-img-box").fadeOut(1200, function(){
+					alertify.success('Imagen se cambio correctamente...');
+					$("div.login_sec").find("div#crop-img-box").fadeOut(1000, function(){
 					$("div#caja-crop").remove();
 					});
 				}, //al darle click en cortar

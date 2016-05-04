@@ -193,13 +193,13 @@ $(document).ready(function(){
 				cargarCrop("img1", cual);
 				break;
 				case "img3":
-				//cargarCrop(cual);
+				cargarCrop("img2", cual);
 				break;
 				case "img4":
-				//cargarCrop(cual);
+				cargarCrop("img2", cual);
 				break;
 				case "img5":
-				//cargarCrop(cual);
+				cargarCrop("img2", cual);
 				break;
 			}
 	});
