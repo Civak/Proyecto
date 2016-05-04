@@ -273,6 +273,9 @@ $(document).ready(function(){
 		});
 	//---- detecta click sobre div que se clickea para mostrar en popup la imagen
 	$("div.login_sec").on("click", "img#img-inventario", function(){
+		alertify.set({ labels: {
+				ok     : "OK",
+			}});
 		var img = $(this).attr('src');
 		var pre = '<div class="row"><div class="col-xs-6 col-md-3"></div><div class="col-xs-6 col-md-6"><a href="#" class="thumbnail"><img src="'+img+'" class="img-responsive"></a></div><div class="col-xs-6 col-md-3"></div></div>';
 		alertify.alert(pre);
