@@ -67,7 +67,7 @@
             if ($result->num_rows > 0) {
                 $direcciones .= '<h3 style="color: #00a0dc;">Inventario Actual.</h3><hr>
 				<div style="height: 460px; overflow-y: scroll; background:#fff;" class="input-login">
-                    <table class="table table-hover text-center">
+                    <table class="table table-hover text-center" id="tab-inventario">
                     <thead>
                       <tr>
                         <th>Código</th>
@@ -84,7 +84,7 @@
 					$total++;
                     $direcciones .= '
                         <tr>
-                        <td>'.$row['cod'].'</td>
+                        <td><div title="Código: '.$row['cod'].'" style="margin: 0 auto; cursor: pointer;  width: 40px; height: 40px;" class="input-login"><img id="img-inventario" src="../../secciones/imagenes/thumbs/'.$row['cod'].'_1.jpg" style="height: 100%; width: 100%; object-fit: cover;"></div>'.$row['cod'].'</td>
                         <td>'.$row['sec'].'</td>
 						<td>'.$row['sub'].'</td>
 						<td>'.$row['des'].'</td>
