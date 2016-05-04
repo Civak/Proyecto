@@ -240,7 +240,79 @@ $(document).ready(function(){
         $("div.login_sec").find("div#crop-img-box").fadeIn(1200);
 	}
 	
-	
+	//----------- click en botón ver inventario
+    $("div#menuPri").on("click", "li#lis-inv", function(event){
+		var date = new Date(); //Obtengo tiempo de expiración, 10 min. 
+        date.setTime(date.getTime() + (10 * 60 * 1000));
+        
+        $.cookie("accion", 0, {expires: date, path: "/"});
+           $.ajax({
+                data: {"cod":0}, 
+                url: 'inventario/php/initInv.php',
+                type: 'post',
+                async: false, //importantisimo, toma la variable al vuelo.
+                beforeSend: function () {
+                //¿que hace antes de enviar?
+                },
+                success: function (infoRegreso) {
+                 if($.isNumeric(infoRegreso))
+              {
+                  alertify.error("Ocurrió un error, intenta de nuevo.");
+              }
+              else
+              {
+                  $("div.login_sec").find("div#areaDeEdicion").hide();
+				  $("div.login_sec").find("div#areaDeEdicion").html(infoRegreso);
+				  $("div.login_sec").find("div#areaDeEdicion").fadeIn(1200);
+              }
+                },
+                  error: function () {
+                     alertify.error("Ocurrió un error, intenta de nuevo.");
+                  }
+            });										  
+		});
+	//----------- click en botón imprimr codigo de barras
+    $("div#menuPri").on("click", "li#imp-cod", function(event){
+														
+		alertify.set({ labels: {
+				ok     : "Imprimir",
+				cancel : "Cancelar"
+			} });
+			alertify.prompt("Ingresa código de barras.", function (e, str) {
+				if (e) {
+					var date = new Date(); //Obtengo tiempo de expiración, 10 min. 
+					date.setTime(date.getTime() + (10 * 60 * 1000));
+					str = str.trim();
+					$.cookie("accion", 1, {expires: date, path: "/"});
+					   $.ajax({
+							data: {"cod":str}, 
+							url: 'inventario/php/initInv.php',
+							type: 'post',
+							async: false, //importantisimo, toma la variable al vuelo.
+							beforeSend: function () {
+							//¿que hace antes de enviar?
+							},
+							success: function (infoRegreso) {
+							 if(parseInt(infoRegreso) === -1)
+						  {
+							  alertify.error("No se encontró código de barras, intenta nuevamente.");
+						  }
+						  else
+						  {
+							  //Imprime código de barras
+							  window.open('articulos/php/pdf/index.php', '_blank');
+						  }
+							},
+							  error: function () {
+								 alertify.error("Ocurrió un error, intenta de nuevo.");
+							  }
+						});	
+				} else {
+					alertify.log("Has cancelado búsqueda");
+				}
+			}, "");
+												  
+		});
     /******** click en boton contraseña de seccion perfil *****/
     $("div#menuPri").on("click", "li#per-con", function(){
         $("div.login_sec").find("div#areaDeEdicion").hide();
