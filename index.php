@@ -47,7 +47,7 @@ se repiten en la página de contacto.php ----------------->
     <div class="col-xs-6">
     <a href="secciones/apartados/index.php" id="BOD">
     	<div class="img-shadow">
-   		<img id="demo1" src="images/a.jpg" class="img-responsive img-shadow" />
+   		<img id="demo1" src="images/inicio/img1.jpg" class="img-responsive img-shadow" />
         <div class="contenthover">
         Todo sobre Bodas
         </div>

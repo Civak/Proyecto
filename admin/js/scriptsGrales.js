@@ -1,5 +1,5 @@
 //Se inicializa JQuery 
-$(document).ready(function(){
+$(document).ready(function(){					   					   
     //Línea que sirve para todos los tooltip aparezcan, al inicio fue un plugin de Bootstrap para tooltip, actualmente lo que crea los tooltip
     //Es Jquery UI, NO Bootstrap, ver documentación. 
     $('[data-toggle="tooltip"]').tooltip({
@@ -176,12 +176,40 @@ $(document).ready(function(){
             enviarForms(archivo, acc, area);
         }
     }
-	/******** click en boton inicio *****/
+	/******** click en boton inicio para editar y muestra mapeo *****/
     $("div#menuPri").on("click", "li#inicio-fot", function(){
         $("div.login_sec").find("div#areaDeEdicion").hide();
         $("div.login_sec").find("div#areaDeEdicion").load("inicio/index.php");
         $("div.login_sec").find("div#areaDeEdicion").fadeIn(1200);
     });
+	//---- detecta click sobre div que se clickea
+	$("div.login_sec").on("click", "div.img-dos-Prin", function(event){
+		var cual = $(this).attr("id");
+			switch(cual){
+				case "img1":
+				cargarCrop(cual);
+				break;
+				case "img2":
+				//cargarCrop(cual);
+				break;
+				case "img3":
+				//cargarCrop(cual);
+				break;
+				case "img4":
+				//cargarCrop(cual);
+				break;
+				case "img5":
+				//cargarCrop(cual);
+				break;
+			}
+	});
+	
+	//---------- Carga croping 
+	function cargarCrop(cual){
+		$("div.login_sec").find("div#crop-img-box").hide();
+        $("div.login_sec").find("div#crop-img-box").load("inicio/"+cual+".php");
+        $("div.login_sec").find("div#crop-img-box").fadeIn(1200);
+	}
 	
     /******** click en boton contraseña de seccion perfil *****/
     $("div#menuPri").on("click", "li#per-con", function(){
