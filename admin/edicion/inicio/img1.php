@@ -1,5 +1,7 @@
-
+<div id="caja-crop">
+<h4>Selecciona y edita la foto para mostrar.</h4><hr>
 <div id="cropContaineroutput-img1"></div>
+</div>
 
 <script>
 var croppicContaineroutputOptions = {
@@ -11,20 +13,20 @@ var croppicContaineroutputOptions = {
 				onBeforeImgUpload: function(){ 
 					//$.cookie("img","img1", {path: "/"});
 				},
-				onAfterImgUpload: function(){ console.log('onAfterImgUpload---') },
-				onImgDrag: function(){ console.log('onImgDrag----') },
-				onImgZoom: function(){ console.log('onImgZoom') },
-				onBeforeImgCrop: function(){ console.log('onBeforeImgCrop') }, //Al darle click en cortar
+				onAfterImgUpload: function(){ },
+				onImgDrag: function(){},
+				onImgZoom: function(){},
+				onBeforeImgCrop: function(){ }, //Al darle click en cortar
 				onAfterImgCrop:function(){ 
 					
 					alertify.success('Imagen 1 se cambio correctamente...');
 					$("div.login_sec").find("div#crop-img-box").fadeOut(1200, function(){
-					$("div#cropContaineroutput-img1").remove();
+					$("div#caja-crop").remove();
 					});
 				}, //al darle click en cortar
-				onReset:function(){ console.log('onReset') },
+				onReset:function(){},
 				onError:function(errormessage){ 
-					alertify.error('Ha ocurrido un error, intenta nuevamente.');
+					alertify.error(errormessage);
 				}
 		}
 		

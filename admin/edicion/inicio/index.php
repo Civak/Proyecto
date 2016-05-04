@@ -2,7 +2,7 @@
 <div class="row">
     	<div class="col-md-3"></div>
         	<div class="col-md-6">
-            <h4>Click sobre la imagen que deseas cambiar.</h4><hr>
+            <h4>Click sobre la imagen que deseas cambiar de la página de inicio.</h4><hr>
                 	<div class="col-xs-6 img-dos-Prin" id="img1">Imagen 1</div>
                     <div class="col-xs-6 img-dos-Prin" id="img2">Imagen 2</div>
             </div>

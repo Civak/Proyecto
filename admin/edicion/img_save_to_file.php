@@ -9,11 +9,11 @@
 	$extension = end($temp);
 	
 	//Check write Access to Directory
-
-	if(!is_writable($imagePath)){
+	$limite = (1024 * 1024 * 3);
+	if(!is_writable($imagePath) || $_FILES['img']["size"] > $limite){
 		$response = Array(
 			"status" => 'error',
-			"message" => 'Can`t upload File; no write Access'
+			"message" => 'Ocurrio un error o la imagen pesa mas de 3MB, intenta nuevamente.'
 		);
 		print json_encode($response);
 		return;

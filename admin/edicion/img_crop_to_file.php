@@ -77,10 +77,10 @@ if(!is_writable(dirname($output_filename))){
 	imagecopyresampled($final_image, $cropped_rotated_image, 0, 0, $imgX1, $imgY1, $cropW, $cropH, $cropW, $cropH);
 	// finally output png image
 	//imagepng($final_image, $output_filename.$type, $png_quality);
-	imagejpeg($final_image, $output_filename.$type, $jpeg_quality);
+	imagejpeg($final_image, $output_filename.".jpg", $jpeg_quality);
 	$response = Array(
 	    "status" => 'success',
-	    "url" => $output_filename.$type
+	    "url" => $output_filename.".jpg"
     );
 }
 print json_encode($response);
