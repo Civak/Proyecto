@@ -88,7 +88,7 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#" title="Buscar artículo" id="buscar-btn"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> Buscar</a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=100011635297468&fref=ts" title="Visitar Facebook" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
+        <li><a href="https://www.facebook.com/Casa-Varcheli-932894540157179/?ref=settings" title="Visitar Facebook" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
          <!-- Perfil -->
         <li class="dropdown"> 
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Perfil<span class="caret"></span></a>

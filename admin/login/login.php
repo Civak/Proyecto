@@ -29,7 +29,7 @@
     <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://www.facebook.com/profile.php?id=100011635297468&fref=ts" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
+        <li><a href="https://www.facebook.com/Casa-Varcheli-932894540157179/?ref=settings" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
