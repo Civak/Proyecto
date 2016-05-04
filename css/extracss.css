@@ -349,3 +349,16 @@ background:url(../../images/boda.jpg);
 .img-color{
 	color: #72B6F9;
 }
+.img-dos-Prin2{
+	cursor: pointer;
+	border: 1px solid #ccc; background:#FFF;
+	padding: 1%;
+	text-align: center;
+	font-family: texto;
+	-webkit-box-shadow: 1px 1px 6px 0px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    1px 1px 6px 0px rgba(50, 50, 50, 0.3);
+	box-shadow:         1px 1px 6px 0px rgba(50, 50, 50, 0.3);
+}
+.img-dos-Prin2:hover{
+	border: 1px solid #662735;
+}

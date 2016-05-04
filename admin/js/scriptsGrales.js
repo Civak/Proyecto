@@ -182,35 +182,64 @@ $(document).ready(function(){
         $("div.login_sec").find("div#areaDeEdicion").load("inicio/index.php");
         $("div.login_sec").find("div#areaDeEdicion").fadeIn(1200);
     });
+	
 	//---- detecta click sobre div que se clickea
-	$("div.login_sec").on("click", "div.img-dos-Prin", function(event){
+	$("div#menuPri").on("click", "li#carrusel-fot", function(){
+															 console.log("entra");
+        $("div.login_sec").find("div#areaDeEdicion").hide();
+        $("div.login_sec").find("div#areaDeEdicion").load("carrusel/index.php");
+        $("div.login_sec").find("div#areaDeEdicion").fadeIn(1200);
+    });
+	
+	
+	//---- detecta click sobre div que se clickea
+	$("div.login_sec").on("click", "div.img-dos-Prin, a.img-dos-Prin2", function(event){
+		event.preventDefault();
 		var cual = $(this).attr("id");
 			switch(cual){
 				case "img1":
-				cargarCrop("img1", cual);
+				cargarCrop("img1", cual, 0);
 				break;
 				case "img2":
-				cargarCrop("img1", cual);
+				cargarCrop("img1", cual, 0);
 				break;
 				case "img3":
-				cargarCrop("img2", cual);
+				cargarCrop("img2", cual, 0);
 				break;
 				case "img4":
-				cargarCrop("img2", cual);
+				cargarCrop("img2", cual, 0);
 				break;
 				case "img5":
-				cargarCrop("img2", cual);
+				cargarCrop("img2", cual, 0);
+				break;
+				
+				case "c1":
+				cargarCrop("carrusel", cual, 1);
+				break;
+				case "c2":
+				cargarCrop("carrusel", cual, 1);
+				break;
+				case "c3":
+				cargarCrop("carrusel", cual, 1);
+				break;
+				case "c4":
+				cargarCrop("carrusel", cual, 1);
+				break;
+				case "c5":
+				cargarCrop("carrusel", cual, 1);
 				break;
 			}
 	});
 	
 	//---------- Carga croping 
-	function cargarCrop(cual, nombre){
+	function cargarCrop(cual, nombre, tipo){
 		$.cookie("img", nombre, {path: "/"});
 		$("div.login_sec").find("div#crop-img-box").hide();
-        $("div.login_sec").find("div#crop-img-box").load("inicio/"+cual+".php");
+		if(tipo === 0) $("div.login_sec").find("div#crop-img-box").load("inicio/"+cual+".php");
+		else $("div.login_sec").find("div#crop-img-box").load("carrusel/"+cual+".php");
         $("div.login_sec").find("div#crop-img-box").fadeIn(1200);
 	}
+	
 	
     /******** click en boton contraseña de seccion perfil *****/
     $("div#menuPri").on("click", "li#per-con", function(){

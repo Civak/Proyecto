@@ -73,7 +73,7 @@
             <li><a href="#">Talla</a></li>
             <li><a href="#">Género</a></li>
             <li><a href="#">Tipo</a></li>
-            <li><a href="#" title="Cambiar fotos del carrusel"><span class="glyphicon glyphicon-play"></span> Fotos de Carrusel</a></li>
+            <li id="carrusel-fot"><a href="#" title="Cambiar fotos del carrusel"><span class="glyphicon glyphicon-play"></span> Fotos de Carrusel</a></li>
             <li id="inicio-fot"><a href="#" title="Cambiar imágenes del inicio"><span class="glyphicon glyphicon-camera"></span> Fotos de Inicio</a></li>
           </ul>
         </li>

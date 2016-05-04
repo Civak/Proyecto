@@ -34,11 +34,11 @@
 		<div class="row">
         	<div class="">
                 <div id='demo'>
-                <div><a href='#'><img src="images/carrusel/boda.jpg"></a></div>
-                <div><a href='#'><img src="images/carrusel/monitos.jpg"></a></div>
-                <div><a href='#'><img src="images/carrusel/ramo.jpg"></a></div>
-                <div><a href='#'><img src="images/carrusel/xva.jpg"></a></div>
-                <div><a href='#'><img src="images/carrusel/ramo2.jpg"></a></div>
+                <div><a href='#'><img src="images/carrusel/c1.jpg"></a></div>
+                <div><a href='#'><img src="images/carrusel/c2.jpg"></a></div>
+                <div><a href='#'><img src="images/carrusel/c3.jpg"></a></div>
+                <div><a href='#'><img src="images/carrusel/c4.jpg"></a></div>
+                <div><a href='#'><img src="images/carrusel/c5.jpg"></a></div>
                 </div>
             </div>
         </div>

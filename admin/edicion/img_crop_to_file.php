@@ -17,8 +17,15 @@ $cropH = $_POST['cropH'];
 $angle = $_POST['rotation']; 
 
 $jpeg_quality = 100;
-
-$output_filename = "../../images/inicio/".$_COOKIE['img'];
+$output_filename = "";
+if(strlen($_COOKIE['img']) == 2)
+{
+	$output_filename = "../../images/carrusel/".$_COOKIE['img'];
+}
+else
+{
+	$output_filename = "../../images/inicio/".$_COOKIE['img'];
+}
 
 // uncomment line below to save the cropped image in the same location as the original image.
 //$output_filename = dirname($imgUrl). "/croppedImg_".rand();
