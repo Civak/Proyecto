@@ -97,15 +97,15 @@
           </ul>
         </li>
         <!-- Edición -->
-        <li class="dropdown"> 
+        <li class="dropdown" > 
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edición<span class="caret"></span></a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" id="edicion">
             <!-- Color -->
-            <li class="dropdown-submenu">
+            <li class="dropdown-submenu" >
 			        <a tabindex="-1" href="#"><span class="glyphicon glyphicon-cog"></span> Color <span style="float:right;" class="glyphicon glyphicon-chevron-right"></span></a>
 			        <ul class="dropdown-menu">
-			          <li><a tabindex="-1" href="#">Nuevo color</a></li>			                  
-			          <li><a href="#">Buscar/Eliminar color</a></li>
+			          <li id="que" value="col-nvo"><a tabindex="-1" href="#">Nuevo color</a></li>			                  
+			          <li id="que" value="bus-col"><a href="#">Buscar/Eliminar color</a></li>
 			        </ul>
 			    </li>
             <!--       -->
@@ -113,8 +113,8 @@
             <li class="dropdown-submenu">
 			        <a tabindex="-1" href="#"><span class="glyphicon glyphicon-cog"></span> Corte <span style="float:right;" class="glyphicon glyphicon-chevron-right"></span></a>
 			        <ul class="dropdown-menu">
-			          <li><a tabindex="-1" href="#">Nuevo corte</a></li>			                  
-			          <li><a href="#">Buscar/Eliminar corte</a></li>
+			          <li id="que" value="cor-nvo"><a tabindex="-1" href="#">Nuevo corte</a></li>			                  
+			          <li id="que" value="bus-cor"><a href="#">Buscar/Eliminar corte</a></li>
 			        </ul>
 			    </li>
             <!--       -->
@@ -122,8 +122,8 @@
             <li class="dropdown-submenu">
 			        <a tabindex="-1" href="#"><span class="glyphicon glyphicon-cog"></span> Talla <span style="float:right;" class="glyphicon glyphicon-chevron-right"></span></a>
 			        <ul class="dropdown-menu">
-			          <li><a tabindex="-1" href="#">Nueva talla</a></li>			                  
-			          <li><a href="#">Buscar/Eliminar talla</a></li>
+			          <li id="que" value="tal-nvo"><a tabindex="-1" href="#">Nueva talla</a></li>			                  
+			          <li id="que" value="bus-tal"><a href="#">Buscar/Eliminar talla</a></li>
 			        </ul>
 			    </li>
             <!--       -->
@@ -131,8 +131,8 @@
             <li class="dropdown-submenu">
 			        <a tabindex="-1" href="#"><span class="glyphicon glyphicon-cog"></span> Género <span style="float:right;" class="glyphicon glyphicon-chevron-right"></span></a>
 			        <ul class="dropdown-menu">
-			          <li><a tabindex="-1" href="#">Nuevo género</a></li>			                  
-			          <li><a href="#">Buscar/Eliminar género</a></li>
+			          <li id="que" value="gen-nvo"><a tabindex="-1" href="#">Nuevo género</a></li>			                  
+			          <li id="que" value="bus-gen"><a href="#">Buscar/Eliminar género</a></li>
 			        </ul>
 			    </li>
             <!--       -->
@@ -140,8 +140,8 @@
             <li class="dropdown-submenu">
 			        <a tabindex="-1" href="#"><span class="glyphicon glyphicon-cog"></span> Tipo <span style="float:right;" class="glyphicon glyphicon-chevron-right"></span></a>
 			        <ul class="dropdown-menu">
-			          <li><a tabindex="-1" href="#">Nuevo tipo</a></li>			                  
-			          <li><a href="#">Buscar/Eliminar tipo</a></li>
+			          <li id="que" value="tip-nvo"><a tabindex="-1" href="#">Nuevo tipo</a></li>			                  
+			          <li id="que" value="bus-tip"><a href="#">Buscar/Eliminar tipo</a></li>
 			        </ul>
 			    </li>
             <!--       -->

@@ -176,6 +176,116 @@ $(document).ready(function(){
             enviarForms(archivo, acc, area);
         }
     }
+	/******** click sobre cualquier boton de edicion *****/
+    $("div#menuPri ul#edicion").on("click", "li#que", function(){
+     var queEs = $(this).attr("value");
+	 	switch(queEs){
+			//Para buscar y eliminar
+			case "bus-col":
+				buscarEdicion("editar/initEdi.php", "", "Color", 0);
+			break;
+			case "bus-cor":
+				buscarEdicion("editar/initEdi.php", "", "Corte", 0);
+			break;
+			case "bus-tal":
+				buscarEdicion("editar/initEdi.php", "", "Talla", 0);
+			break;
+			case "bus-gen":
+				buscarEdicion("editar/initEdi.php", "", "Genero", 0);
+			break;
+			case "bus-tip":
+				buscarEdicion("editar/initEdi.php", "", "Tipo", 0);
+			break;
+			
+			//Para ingresar nuevo
+			case "col-nvo":
+				pedirDatoEdicion("editar/initEdi.php", "", "Color", 2);
+			break;
+			case "cor-nvo":
+				pedirDatoEdicion("editar/initEdi.php", "", "Corte", 2);
+			break;
+			case "tal-nvo":
+				pedirDatoEdicion("editar/initEdi.php", "", "Talla", 2);
+			break;
+			case "gen-nvo":
+				pedirDatoEdicion("editar/initEdi.php", "", "Genero", 2);
+			break;
+			case "tip-nvo":
+				pedirDatoEdicion("editar/initEdi.php", "", "Tipo", 2);
+			break;
+		}
+    });
+	//Pedir dato de nuevo registro, depende de la tbala.
+	function pedirDatoEdicion(archivo, dato, tabla, acc){
+		   alertify.set({ labels: {
+                                ok     : "Guardar",
+                                cancel : "Cancelar"
+                            } });
+            alertify.prompt("<p><b>Ingresa descripción de: "+tabla+"</b></p>", function (e, str) {
+                                if (e) {
+									str = str.trim();
+                                    buscarEdicion(archivo, str, tabla, acc);
+                                } else {
+                                    alertify.error("Se ha cancelado acción.");
+                                }
+                            }, "");
+	}
+	
+	//Busca depende del tipo de boton presionado
+	function buscarEdicion(archivo, dato, tabla, acc)
+	{
+        var date = new Date(); //Obtengo tiempo de expiración, 10 min. 
+        date.setTime(date.getTime() + (10 * 60 * 1000));
+        
+        //var formData = new FormData($("div.login_sec form")[0]);
+        $.cookie("accion",acc, {expires: date, path: "/"});
+            $.ajax({
+                data: {"cod":dato, "tab": tabla}, 
+                url: archivo,
+                type: 'post',
+                async: false, //importantisimo, toma la variable al vuelo.
+                beforeSend: function () {
+                //¿que hace antes de enviar?
+                },
+                success: function (infoRegreso) {
+                    switch(parseInt(infoRegreso))
+                    {
+						case 1:
+                            alertify.success("Registro de "+tabla+" eliminado correctamente.");
+                            break;
+						case 2:
+                            alertify.success("Registro correcto en datos de "+tabla);
+                            break;
+                        case -1:
+                            alertify.error("No hay datos registrados aún.");
+                            break;
+						case -2:
+                            alertify.error("No se encontró ningún ID, intenta nuevamente.");
+                            break;
+						case -3:
+                            alertify.error("Ocurrió un error, intenta nuevamente.");
+                            break;
+                        default:
+                                 alertify.set({ labels: {
+                                ok     : "Eliminar",
+                                cancel : "Cancelar"
+                            } });
+                            alertify.prompt(infoRegreso+"<br><p><b>Ingresa el ID que deseas eliminar en caso contrario Cancelar</b></p>", function (e, str) {
+                                if (e) {
+									str = str.trim();
+                                    buscarEdicion(archivo, str, tabla, 1);
+                                } else {
+                                    alertify.error("Se ha cancelado acción.");
+                                }
+                            }, "");
+                    }
+
+                },
+                  error: function () {
+                     alertify.error("Ocurrió un error, intenta de nuevo.");
+                  }
+            });
+	}
 	/******** click en boton inicio para editar y muestra mapeo *****/
     $("div#menuPri").on("click", "li#inicio-fot", function(){
         $("div.login_sec").find("div#areaDeEdicion").hide();
@@ -874,7 +984,7 @@ $(document).ready(function(){
     }
     
     //Esta función solo envia datos, no forms. Es para buscar articulo antes de eliminar
-    function enviarDatosBuscar(archivo, dato, acc)
+    function enviarDatosBuscar(archivo, dato, acc, tabla)
     {
 
         var date = new Date(); //Obtengo tiempo de expiración, 10 min. 
@@ -883,7 +993,7 @@ $(document).ready(function(){
         //var formData = new FormData($("div.login_sec form")[0]);
         $.cookie("accion",acc, {expires: date, path: "/"});
             $.ajax({
-                data: {"cod":dato}, 
+                data: {"cod":dato, "tab": tabla}, 
                 url: archivo,
                 type: 'post',
                 async: false, //importantisimo, toma la variable al vuelo.
