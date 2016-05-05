@@ -25,8 +25,12 @@ $(document).ready(function(){
 	
 	$("div#fotos-p").on('click', 'a', function(){
 		var acc = $(this).attr('id');
-		console.log(acc);
-        //var formData = new FormData($("div.login_sec form")[0]);
+        $.cookie("sec",acc, {path: "/"});
+	});
+	
+	$("div#XVA, div#BOD").on('click', function(){
+		var acc = $(this).attr('id');
+		window.open("secciones/apartados/index.php", "_self");
         $.cookie("sec",acc, {path: "/"});
 	});
 });

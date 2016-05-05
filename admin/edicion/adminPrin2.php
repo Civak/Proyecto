@@ -12,28 +12,14 @@
     
 <style>
 .dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu > .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-}
-.dropdown-submenu:hover > .dropdown-menu {
-  display: block;
-}
-.dropdown-submenu:hover > a:after {
-  border-left-color: #fff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left > .dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
+    position: relative;
 }
 
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
 </style>
 </head>
 <body> 
@@ -100,51 +86,11 @@
         <li class="dropdown"> 
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edición<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <!-- Color -->
-            <li class="dropdown-submenu">
-			        <a tabindex="-1" href="#"><span class="glyphicon glyphicon-cog"></span> Color <span style="float:right;" class="glyphicon glyphicon-chevron-right"></span></a>
-			        <ul class="dropdown-menu">
-			          <li><a tabindex="-1" href="#">Nuevo color</a></li>			                  
-			          <li><a href="#">Buscar/Eliminar color</a></li>
-			        </ul>
-			    </li>
-            <!--       -->
-            <!-- Corte -->
-            <li class="dropdown-submenu">
-			        <a tabindex="-1" href="#"><span class="glyphicon glyphicon-cog"></span> Corte <span style="float:right;" class="glyphicon glyphicon-chevron-right"></span></a>
-			        <ul class="dropdown-menu">
-			          <li><a tabindex="-1" href="#">Nuevo corte</a></li>			                  
-			          <li><a href="#">Buscar/Eliminar corte</a></li>
-			        </ul>
-			    </li>
-            <!--       -->
-            <!-- Talla -->
-            <li class="dropdown-submenu">
-			        <a tabindex="-1" href="#"><span class="glyphicon glyphicon-cog"></span> Talla <span style="float:right;" class="glyphicon glyphicon-chevron-right"></span></a>
-			        <ul class="dropdown-menu">
-			          <li><a tabindex="-1" href="#">Nueva talla</a></li>			                  
-			          <li><a href="#">Buscar/Eliminar talla</a></li>
-			        </ul>
-			    </li>
-            <!--       -->
-            <!-- Genero -->
-            <li class="dropdown-submenu">
-			        <a tabindex="-1" href="#"><span class="glyphicon glyphicon-cog"></span> Género <span style="float:right;" class="glyphicon glyphicon-chevron-right"></span></a>
-			        <ul class="dropdown-menu">
-			          <li><a tabindex="-1" href="#">Nuevo género</a></li>			                  
-			          <li><a href="#">Buscar/Eliminar género</a></li>
-			        </ul>
-			    </li>
-            <!--       -->
-            <!-- Tipo -->
-            <li class="dropdown-submenu">
-			        <a tabindex="-1" href="#"><span class="glyphicon glyphicon-cog"></span> Tipo <span style="float:right;" class="glyphicon glyphicon-chevron-right"></span></a>
-			        <ul class="dropdown-menu">
-			          <li><a tabindex="-1" href="#">Nuevo tipo</a></li>			                  
-			          <li><a href="#">Buscar/Eliminar tipo</a></li>
-			        </ul>
-			    </li>
-            <!--       -->
+            <li><a href="#">Color</a></li>
+            <li><a href="#">Corte</a></li>
+            <li><a href="#">Talla</a></li>
+            <li><a href="#">Género</a></li>
+            <li><a href="#">Tipo</a></li>
             <li id="carrusel-fot"><a href="#" title="Cambiar fotos del carrusel"><span class="glyphicon glyphicon-play"></span> Fotos de Carrusel</a></li>
             <li id="inicio-fot"><a href="#" title="Cambiar imágenes del inicio"><span class="glyphicon glyphicon-camera"></span> Fotos de Inicio</a></li>
           </ul>

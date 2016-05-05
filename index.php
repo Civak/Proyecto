@@ -41,31 +41,35 @@ se repiten en la página de contacto.php ----------------->
 </div>
 <hr>
 
-<!------------------------------------------------------------------------------------------------------------------------->
+<!-- -->
 <div class="container" id="fotos-p">
 	<div class="row">
-    <div class="col-xs-6">
-    <a href="secciones/apartados/index.php" id="BOD">
-    	<div class="img-shadow">
-   		<img id="demo1" src="images/inicio/img1.jpg" class="img-responsive img-shadow" />
-        <div class="contenthover">
-        Todo sobre Bodas
-        </div>
-    </a>
-        </div>
+    <div class="col-xs-6 back-img">
+            <div class="port-7 effect-1" style="cursor:pointer;">
+                        <div class="image-box">
+                            <img src="images/inicio/img1.jpg" alt="Image-1">
+                        </div>
+                        <div class="text-desc">
+                            <h3>Bodas</h3>
+                            <p>Todo para bodas, vestidos, lazos, arras, copas y mucho más.</p>
+                            <a href="secciones/apartados/index.php" id="BOD" class="btn-c">Ver catálogo</a>
+                        </div>
+                    </div>
     </div>
-    	<div class="col-xs-6">
-		<a href="secciones/apartados/index.php" id="XVA">
-        <div class="img-shadow">
-          <img id="demo2" src="images/inicio/img2.jpg" class="img-responsive img-shadow" />
-          <div class="contenthover">
-          Todo sobre XV años
+    	<div class="col-xs-6 back-img">
+  				<div class="port-7 effect-3" style="cursor:pointer;">
+                        <div class="image-box">
+                            <img src="images/inicio/img2.jpg" alt="Image-1">
+                        </div>
+                        <div class="text-desc">
+                            <h3>XV Años</h3>
+                            <p>Todo para tu fiesta de XV años sea única e inolvidable, vestidos, copas, ramos y mucho más.</p>
+                            <a href="secciones/apartados/index.php" id="XVA" class="btn-c">Ver catálogo</a>
+                        </div>
           </div>
-          </a>
-          </div>
-        </div>
+    	</div>
     </div>
-</div>
+ </div>
 
 <hr>
 <div class="container">
@@ -77,14 +81,44 @@ se repiten en la página de contacto.php ----------------->
         <div class="col-xs-6 col-md-4"></div>
 	</div>
 </div>
-	<div class="col-xs-6 col-md-4">
-    		<img id="demo2" src="images/inicio/img3.jpg" class="img-responsive img-shadow" />
+	<div class="col-xs-6 col-md-4" id="XVA">
+    		<!--<img id="demo2" src="images/inicio/img3.jpg" class="img-responsive img-shadow" />-->
+            	<div class="port-3 effect-3" style="cursor:pointer;">
+                	<div class="image-box">
+                    	<img src="images/inicio/img3.jpg" alt="Image-1">
+                    </div>
+                    <div class="text-desc">
+                    	<h3>XV Años</h3>
+                        <p>Los mejores vestidos y cortes, ramos, y mucho más para tus XV años.</p>
+                    	<a href="#" class="btn-c">Ver catálogo</a>
+                    </div>
+                </div>
     </div>
     <div class="col-xs-6 col-md-4">
-    		<img id="demo2" src="images/inicio/img4.jpg" class="img-responsive img-shadow" />
+    		<!--<img id="demo2" src="images/inicio/img4.jpg" class="img-responsive img-shadow" />-->
+            <div class="port-8 effect-3">
+                	<div class="image-box">
+                    	<img src="images/inicio/img4.jpg" alt="Image-1">
+                    </div>
+                    <div class="text-desc">
+                    	<h3>Casa Varcheli</h3>
+                        <p>“Andábamos sin buscarnos, pero sabiendo que andábamos para encontrarnos” <br> <b>Julio Cortázar</b></p>
+                    </div>
+      </div>
     </div>
-    <div class="col-xs-6 col-md-4">
-    		<img id="demo2" src="images/inicio/img5.jpg" class="img-responsive img-shadow" />
+    <div class="col-xs-6 col-md-4" id="BOD">
+    		<!--<img id="demo2" src="images/inicio/img5.jpg" class="img-responsive img-shadow" />-->
+
+            <div class="port-3 effect-3" style="cursor:pointer;">
+                	<div class="image-box">
+                    	<img src="images/inicio/img5.jpg" alt="Image-1">
+                    </div>
+                    <div class="text-desc">
+                    	<h3>Vestidos de Novia</h3>
+                        <p>Todo lo que necesitas para ese día especial, vestidos de modernos y toda clase de cortes. También puedes preguntar por nuevos diseños.</p>
+                    	<a href="#" class="btn-c">Ver catálogo</a>
+                    </div>
+      </div>
     </div>
 </div>
 

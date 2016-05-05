@@ -15,6 +15,7 @@
 <link href="css/extracss.css" rel="stylesheet" type="text/css" media="all" />	
 <link href="css/scrolling-nav.css" rel="stylesheet">
 <link href="css/full-slider.css" rel="stylesheet">
+<link href="css/hover-effects.css" rel="stylesheet" type="text/css" media="all" />	
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 <!--//theme-style-->

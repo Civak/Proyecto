@@ -362,3 +362,7 @@ background:url(../../images/boda.jpg);
 .img-dos-Prin2:hover{
 	border: 1px solid #662735;
 }
+.back-img{
+	padding:1%;
+background: rgba(191, 172, 155, 0.75);
+}
